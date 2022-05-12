@@ -1,5 +1,6 @@
+ngrok tcp 22
 curl  http://localhost:4040/api/tunnels > tunnels.json
-git init
+# git init
 git add .
 git commit -m "Updated tunnels.json"
 git branch -M main
