@@ -1,4 +1,4 @@
-ngrok tcp 22
+ngrok tcp 22 > /dev/null &
 curl  http://localhost:4040/api/tunnels > tunnels.json
 # git init
 git add .
