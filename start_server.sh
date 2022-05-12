@@ -4,7 +4,7 @@ ngrok tcp 22 > /dev/null &
 sleep 1
 curl  http://localhost:4040/api/tunnels > tunnels.json
 echo $(cat tunnels.json | jq -r '.tunnels[0].public_url') > tunnels.json
-sed 's+tcp://0.tcp.in.ngrok.io:++g' tunnels.json
+sed -i 's+tcp://0.tcp.in.ngrok.io:++g' tunnels.json
 git config user.name tezz-io
 git config user.email totejasmr@gmail.com
 DIR="/home/pi/ssh/.git"
