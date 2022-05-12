@@ -1,3 +1,4 @@
+cd /home/pi/ssh
 killall ngrok
 sleep 1
 ngrok tcp 22 > /dev/null &
